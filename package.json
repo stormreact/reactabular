@@ -42,14 +42,14 @@
   },
   "homepage": "http://reactabular.js.org/",
   "jest": {
-    "collectCoverage": true,
+    "collectCoverage": false,
     "moduleFileExtensions": [
       "js",
       "jsx"
     ],
     "moduleDirectories": [
       "node_modules",
-      "packages"
+      "packages/reactabular-table"
     ],
     "setupFiles": [
       "./lib/test_setup.js"
@@ -123,9 +123,5 @@
     "webpack": "^1.14.0",
     "webpack-dev-server": "^1.16.2",
     "webpack-merge": "^2.6.1"
-  },
-  "pre-push": [
-    "test:lint",
-    "test"
-  ]
+  }
 }
